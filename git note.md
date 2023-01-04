@@ -63,3 +63,15 @@ $ git branch <브랜치 이름> <커밋 ID>
 $ git branch -d <브랜치 이름> # 병합된 브랜치만 삭제 가능
 $ git branch -D <브랜치 이름> # (주의) 강제 삭제 (병합되지 않은 브랜치도 삭제 가능)
 ```
+
+> git clone
+
+```
+$ git clone https://github.com/ownage2/TIL.git
+```
+
+> git pull
+
+```
+$ git pull origin master
+```
