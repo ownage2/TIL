@@ -6,17 +6,16 @@
 
 ## 2. 문법
 
-### 목차
-
 [2.1. 머리말(Header)](#21-머리말header) \
 [2.2. 인용문(Blockquote)](#22-인용문blockquote)  
 [2.3. 목록(Lists)](#23-목록lists)  
+[2.4. 코드 블록(Code Blocks)](#24-코드-블록code-blocks)
 
 ---
 
 ### 2.1. 머리말(Header)
 
--   글머리에 Hash(#)의 수로 Header Level이 결정된다. H1(#)부터 H6(######)까지 지원하며 H1과 H2는 자동으로 밑줄이 그어진다.
+-   글머리에 Hash`#`의 수로 Header Level이 결정된다. H1`#`부터 H6`######`까지 지원하며 H1과 H2는 자동으로 밑줄이 그어진다.
 
 ```
 # The First Level Header
@@ -24,6 +23,7 @@
 ```
 
 # The First Level Header
+<br />
 
 ```
 # The Second Level Header
@@ -31,6 +31,7 @@
 ```
 
 ## The Second Level Header
+<br />
 
 ```
 # The First Level Header
@@ -60,7 +61,7 @@
 
 ### 2.2. 인용문(Blockquote)
 
--   글머리에 이메일에서 사용하는 `>` 문자를 사용한다
+-   글머리에 이메일에서 사용하는 `>`기호를 사용한다
 
 ```
 > This is the first level of quoting.
@@ -106,7 +107,9 @@
 - Red
 - Green
 - Blue
+
 ---
+
 -   들여쓰기 정도에 따라 글머리기호가 달라진다. 글머리에 `*`, `+`, `-` 세 기호 중 어떠한 기호를 조합하여 쓰더라도 1단계는 `●`, 2단계는 `○`, 3단계 이하에서는 `■`로 표시된다.
 
 ```
@@ -116,12 +119,14 @@
             + The Fourth Level
                 * The Fifth Level
 ```
----
+
 * The First Level
     + The Second Level
         - The Third Level
             + The Fourth Level
                 * The Fifth Level
+
+---
 
 -   순서 있는 목록은 글머리에 숫자를 사용한다.
 
@@ -141,13 +146,13 @@
 
 ```
 1. Bird
-1. McHale
-1. Parish
+2. McHale
+3. Parish
 ```
 
 1. Bird
-1. McHale
-1. Parish
+2. McHale
+3. Parish
 
 ```
 3. Bird
@@ -160,3 +165,5 @@
 8. Parish
 
 ---
+
+### 2.4. 코드 블록(Code Blocks)
