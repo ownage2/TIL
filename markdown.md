@@ -10,55 +10,151 @@
 
 [2.1. 머리말(Header)](#21-머리말header) \
 [2.2. 인용문(Blockquote)](#22-인용문blockquote)  
-[2.1. 헤더](#2-1-헤더)  
+[2.3. 목록(Lists)](#23-목록lists)  
 123
 
 ### 2.1. 머리말(Header)
 
--   라인 시작 부분 Hash(#)의 수로 Header Level이 결정된다. H1(#)부터 H6(######)까지 지원하며 H1과 H2는 자동으로 밑줄이 그어진다.
+-   글머리에 Hash(#)의 수로 Header Level이 결정된다. H1(#)부터 H6(######)까지 지원하며 H1과 H2는 자동으로 밑줄이 그어진다.
 
 ```
-# A First Level Header
+# The First Level Header
 ======================
 ```
 
-# A First Level Header
+# The First Level Header
 
 ```
-# A Second Level Header
+# The Second Level Header
 -----------------------
 ```
 
-## A Second Level Header
+## The Second Level Header
 
 ```
-# A First Level Header
-## A Second Level Header
-### A Third Level Header
-#### A Fourth Level Header
-##### A Fifth Level Header
-###### A Sixth Level Header
-####### A Seventh Level Header (not supported)
+# The First Level Header
+## The Second Level Header
+### The Third Level Header
+#### The Fourth Level Header
+##### The Fifth Level Header
+###### The Sixth Level Header
+####### The Seventh Level Header (not supported)
 ```
 
-# A First Level Header
+# The First Level Header
 
-## A Second Level Header
+## The Second Level Header
 
-### A Third Level Header
+### The Third Level Header
 
-#### A Fourth Level Header
+#### The Fourth Level Header
 
-##### A Fifth Level Header
+##### The Fifth Level Header
 
-###### A Sixth Level Header
+###### The Sixth Level Header
 
-####### A Seventh Level Header (not supported)
+####### The Seventh Level Header (not supported)
 
 ### 2.2. 인용문(Blockquote)
 
+-   글머리에 이메일에서 사용하는 `>` 문자를 사용한다
+
 ```
+> This is the first level of quoting.
 >
+>> This is nested blockquote.
+>
+> Back to the first level.
 ```
 
+> This is the first level of quoting.
 >
+> > This is nested blockquote.
+>
+> Back to the first level.
+
+### 2.3. 목록(Lists)
+
+-   순서 없는 목록은 글머리에 별표`*`, 더하기표`+`, 붙임표`-`을 사용한다. `*`, `+`, `-` 셋 모두 `●`가 글머리기호로 나타난다.
+
+```
+* Red
+* Green
+* Blue
+```
+```
++ Red
++ Green
++ Blue
+```
+```
+- Red
+- Green
+- Blue
+```
+* Red
+* Green
+* Blue
+---
++ Red
++ Green
++ Blue
+---
+- Red
+- Green
+- Blue
+---
+
+-   들여쓰기 정도에 따라 글머리기호가 달라진다. 글머리에 `*`, `+`, `-` 세 기호 중 어떤 기호를 조합하여 쓰더라도 1단계는 `●`, 2단계는 `○`, 3단계 이하에서는 `■`로 나타난다.
+
+```
+* The First Level
+    + The Second Level
+        - The Third Level
+            + The Fourth Level
+                * The Fifth Level
+```
+
+* The First Level
+    + The Second Level
+        - The Third Level
+            + The Fourth Level
+                * The Fifth Level
+
+-   순서 있는 목록은 글머리에 숫자를 사용한다.
+
+```
+1. Bird
+2. McHale
+3. Parish
+```
+
+1. Bird
+2. McHale
+3. Parish
+
+---
+
+-   글머리 숫자에 어떤 를 입력하더라도 첫 줄을 기준으로 내림차순으로 나타난다.
+
+```
+1. Bird
+1. McHale
+1. Parish
+```
+
+1. Bird
+1. McHale
+1. Parish
+
+```
+3. Bird
+1. McHale
+8. Parish
+```
+
+3. Bird
+1. McHale
+8. Parish
+
+-
