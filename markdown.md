@@ -11,7 +11,8 @@
 [2.1. 머리말(Header)](#21-머리말header) \
 [2.2. 인용문(Blockquote)](#22-인용문blockquote)  
 [2.3. 목록(Lists)](#23-목록lists)  
-123
+
+---
 
 ### 2.1. 머리말(Header)
 
@@ -55,6 +56,8 @@
 
 ####### The Seventh Level Header (not supported)
 
+---
+
 ### 2.2. 인용문(Blockquote)
 
 -   글머리에 이메일에서 사용하는 `>` 문자를 사용한다
@@ -72,6 +75,8 @@
 > > This is nested blockquote.
 >
 > Back to the first level.
+
+---
 
 ### 2.3. 목록(Lists)
 
@@ -155,4 +160,3 @@
 8. Parish
 
 ---
-<hr style="border:2px solid gray">
