@@ -1,10 +1,10 @@
 # 마크다운
 
-## 1. 개요
+# 1. 개요
 
 [마크다운(Markdown)](https://www.markdownguide.org/getting-started/)은 일반 텍스트 문서에 서식 요소를 추가하는 데 사용할 수 있는 간단한 마크업 언어입니다. 2004년 [John Gruber](https://daringfireball.net/projects/markdown/)가 만든 Markdown은 현재 세계에서 가장 인기 있는 마크업 언어 중 하나입니다.
 
-## 2. 문법
+# 2. 문법
 
 [2.1. 머리말(Header)](#21-머리말header) \
 [2.2. 인용문(Blockquote)](#22-인용문blockquote)  
@@ -13,7 +13,7 @@
 
 ---
 
-### 2.1. 머리말(Header)
+## 2.1. 머리말(Header)
 
 -   글머리에 Hash`#`의 수로 Header Level이 결정된다. H1`#`부터 H6`######`까지 지원하며 H1과 H2는 자동으로 밑줄이 그어진다.
 
@@ -21,6 +21,7 @@
 # The First Level Header
 ======================
 ```
+
 # The First Level Header
 <br />
 
@@ -28,6 +29,7 @@
 # The Second Level Header
 -----------------------
 ```
+
 ## The Second Level Header
 <br />
 
@@ -40,6 +42,7 @@
 ###### The Sixth Level Header
 ####### The Seventh Level Header (not supported)
 ```
+
 # The First Level Header
 
 ## The Second Level Header
@@ -56,7 +59,7 @@
 
 ---
 
-### 2.2. 인용문(Blockquote)
+## 2.2. 인용문(Blockquote)
 
 -   글머리에 이메일에서 사용하는 `>`기호를 사용한다
 
@@ -76,7 +79,7 @@
 
 ---
 
-### 2.3. 목록(Lists)
+## 2.3. 목록(Lists)
 
 -   순서 없는 목록은 글머리에 별표`*`, 더하기표`+`, 붙임표`-`를 사용한다. `*`, `+`, `-` 세 기호 모두 글머리기호로 `●`가 표시된다.
 
@@ -163,4 +166,4 @@
 
 ---
 
-### 2.4. 코드 블록(Code Blocks)
+## 2.4. 코드 블록(Code Blocks)
