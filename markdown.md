@@ -57,9 +57,11 @@
 
 ####### The Seventh Level Header (not supported)
 
+<br />
+
 ## 2.2. 인용문(Blockquote)
 
--   글머리에 이메일에서 사용하는 `>`기호를 사용한다
+-   글머리에 이메일에서 사용하는 `>`기호를 사용한다. 인용문을 중복해서 사용하거나 다른 마크다운 요소를 포함할 수 있다. 
 
 ```
 > This is the first level of quoting.
@@ -67,6 +69,10 @@
 >> This is nested blockquote.
 >
 > Back to the first level.
+>
+> * This is list.
+>
+> ``` This is code block. ```
 ```
 
 > This is the first level of quoting.
@@ -74,6 +80,12 @@
 > > This is nested blockquote.
 >
 > Back to the first level.
+>
+> * This is list.
+>
+> ``` This is code block. ```
+
+<br />
 
 ## 2.3. 목록(Lists)
 
@@ -160,4 +172,7 @@
 1. McHale
 8. Parish
 
+<br />
+
 ## 2.4. 코드 블록(Code Blocks)
+
