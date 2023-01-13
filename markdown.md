@@ -1,4 +1,4 @@
-# 마크다운
+# 마크다운(Markdown)
 
 # 1. 개요
 
@@ -57,8 +57,6 @@
 
 ####### The Seventh Level Header (not supported)
 
----
-
 ## 2.2. 인용문(Blockquote)
 
 -   글머리에 이메일에서 사용하는 `>`기호를 사용한다
@@ -76,8 +74,6 @@
 > > This is nested blockquote.
 >
 > Back to the first level.
-
----
 
 ## 2.3. 목록(Lists)
 
@@ -163,7 +159,5 @@
 3. Bird
 1. McHale
 8. Parish
-
----
 
 ## 2.4. 코드 블록(Code Blocks)
