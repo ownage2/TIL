@@ -21,7 +21,6 @@
 # The First Level Header
 ======================
 ```
-
 # The First Level Header
 <br />
 
@@ -29,7 +28,6 @@
 # The Second Level Header
 -----------------------
 ```
-
 ## The Second Level Header
 <br />
 
@@ -42,7 +40,6 @@
 ###### The Sixth Level Header
 ####### The Seventh Level Header (not supported)
 ```
-
 # The First Level Header
 
 ## The Second Level Header
