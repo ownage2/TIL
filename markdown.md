@@ -17,12 +17,15 @@
 
 -   글머리에 Hash`#`의 수로 Header Level이 결정된다. H1`#`부터 H6`######`까지 지원하며 H1과 H2는 자동으로 밑줄이 그어진다.
 
+`작성 예시`
 ```
 # The First Level Header
 ======================
 ```
 
+`적용 예시`
 # The First Level Header
+
 <br />
 
 ```
@@ -31,6 +34,7 @@
 ```
 
 ## The Second Level Header
+
 <br />
 
 ```
@@ -61,9 +65,9 @@
 
 ## 2.2. 인용문(Blockquote)
 
--   글머리에 이메일에서 사용하는 `>`기호를 사용한다. 인용문을 중복해서 사용하거나 다른 마크다운 요소를 포함할 수 있다. 
+-   글머리에 이메일에서 사용하는 `>`기호를 사용한다. 인용문을 중복해서 사용하거나 다른 마크다운 요소를 포함할 수 있다.
 
-```
+````
 > This is the first level of quoting.
 >
 >> This is nested blockquote.
@@ -73,7 +77,7 @@
 > * This is list.
 >
 > ``` This is code block. ```
-```
+````
 
 > This is the first level of quoting.
 >
@@ -81,9 +85,9 @@
 >
 > Back to the first level.
 >
-> * This is list.
+> -   This is list.
 >
-> ``` This is code block. ```
+> `This is code block.`
 
 <br />
 
@@ -96,25 +100,30 @@
 * Green
 * Blue
 ```
-* Red
-* Green
-* Blue
+
+-   Red
+-   Green
+-   Blue
+
 ```
 + Red
 + Green
 + Blue
 ```
-+ Red
-+ Green
-+ Blue
+
+-   Red
+-   Green
+-   Blue
+
 ```
 - Red
 - Green
 - Blue
 ```
-- Red
-- Green
-- Blue
+
+-   Red
+-   Green
+-   Blue
 
 ---
 
@@ -128,11 +137,11 @@
                 * The Fifth Level
 ```
 
-* The First Level
-    + The Second Level
-        - The Third Level
-            + The Fourth Level
-                * The Fifth Level
+-   The First Level
+    -   The Second Level
+        -   The Third Level
+            -   The Fourth Level
+                -   The Fifth Level
 
 ---
 
@@ -154,13 +163,13 @@
 
 ```
 1. Bird
-2. McHale
-3. Parish
+1. McHale
+1. Parish
 ```
 
 1. Bird
-2. McHale
-3. Parish
+1. McHale
+1. Parish
 
 ```
 3. Bird
@@ -170,9 +179,83 @@
 
 3. Bird
 1. McHale
-8. Parish
+1. Parish
 
 <br />
 
 ## 2.4. 코드 블록(Code Blocks)
 
+- 최소 4개의 공백 또는 1개의 탭으로 들여쓰기를 하면 코드 블록이 생성된다. 코드 블록은 들여쓰기되지 않은 줄에 도달할 때까지 계속된다.
+
+```
+This is a normal paragraph:
+
+    This is a code block.
+
+end code block.
+```
+
+This is a normal paragraph:
+
+    This is a code block.
+
+end code block.
+
+- 개행하며 한 줄 씩 띄어쓰지 않으면 코드 블록이 제대로 되지 않는다.
+
+```
+This is a normal paragraph:
+    This is a code block.
+end code block.
+```
+
+This is a normal paragraph:
+    This is a code block.
+end code block.
+
+- 코드 블록 앞뒤에 삼중 백틱 `` ``` ``을 배치하여 코드 블럭을 생성할 수 있다.
+
+````
+```
+function test() {
+  console.log("notice the blank line before this function?");
+}
+```
+````
+```
+function test() {
+  console.log("notice the blank line before this function?");
+}
+```
+
+- 코드 블록에 3중 백틱을 표시하려면 4중 백틱 안에 넣는다.
+
+`````
+````
+```
+Look! You can see my backticks.
+```
+````
+`````
+
+````
+```
+Look! You can see my backticks.
+```
+````
+
+- GitHub에서는 선택적 언어 식별자를 추가하여 구문을 강조하도록 설정할 수 있다.
+
+````
+```ruby
+require 'redcarpet'
+markdown = Redcarpet.new("Hello World!")
+puts markdown.to_html
+```
+````
+
+```ruby
+require 'redcarpet'
+markdown = Redcarpet.new("Hello World!")
+puts markdown.to_html
+```
