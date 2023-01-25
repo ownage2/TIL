@@ -6,10 +6,12 @@
 
 # 2. 문법
 
-[2.1. 머리말(Header)](#21-머리말header) \
+[2.1. 머리말(Header)](#21-머리말header)  \
 [2.2. 인용문(Blockquote)](#22-인용문blockquote)  
-[2.3. 목록(Lists)](#23-목록lists)  
-[2.4. 코드 블록(Code Blocks)](#24-코드-블록code-blocks)
+[2.3. 목록(Lists)](#23-목록lists) <br>
+[2.4. 코드 블록(Code Blocks)](#24-코드-블록code-blocks) <br>
+[2.5. 수평선(Horizontal Rules)](#25-수평선horizontal-rules) <br>
+[2.6. 강제개행(Line Breaks)](#26-강제개행line-breaks)  <br>
 
 ---
 
@@ -17,7 +19,8 @@
 
 -   글머리에 Hash`#`의 수로 Header Level이 결정된다. H1`#`부터 H6`######`까지 지원하며 H1과 H2는 자동으로 밑줄이 그어진다.
 
-`예시 1`
+`머리말 예시 1`
+
 ```
 # The First Level Header
 ======================
@@ -27,7 +30,8 @@
 
 <br />
 
-`예시 2`
+`머리말 예시 2`
+
 ```
 # The Second Level Header
 -----------------------
@@ -37,7 +41,8 @@
 
 <br />
 
-`예시 3`
+`머리말 예시 3`
+
 ```
 # The First Level Header
 ## The Second Level Header
@@ -68,7 +73,8 @@
 
 -   글머리에 이메일에서 사용하는 `>`기호를 사용한다. 인용문을 중복해서 사용하거나 다른 마크다운 요소를 포함할 수 있다.
 
-`예시 1`
+`인용문 예시 1`
+
 ````
 > This is the first level of quoting.
 >
@@ -95,31 +101,34 @@
 
 ## 2.3. 목록(Lists)
 
--   순서 없는 목록은 글머리에 별표`*`, 더하기표`+`, 붙임표`-`를 사용한다. `*`, `+`, `-` 세 기호 모두 글머리기호로 `●`가 표시된다.
+-   순서 없는 목록은 글머리에 별표(asterisk)`*`, 더하기표(plus)`+`, 붙임표(hyphen)`-`를 사용한다. `*`, `+`, `-` 세 기호 모두 글머리기호로 `●`가 표시된다.
 
-`예시 1`
+`목록 예시 1`
+
 ```
 * Red
 * Green
 * Blue
 ```
 
--   Red
--   Green
--   Blue
+* Red
+* Green
+* Blue
 
-`예시 2`
+`목록 예시 2`
+
 ```
 + Red
 + Green
 + Blue
 ```
 
--   Red
--   Green
--   Blue
++ Red
++ Green
++ Blue
 
-`예시 3`
+`목록 예시 3`
+
 ```
 - Red
 - Green
@@ -134,7 +143,8 @@
 
 -   들여쓰기 정도에 따라 글머리기호가 달라진다. 글머리에 `*`, `+`, `-` 세 기호 중 어떠한 기호를 조합하여 쓰더라도 1단계는 `●`, 2단계는 `○`, 3단계 이하에서는 `■`로 표시된다.
 
-`예시 4`
+`목록 예시 4`
+
 ```
 * The First Level
     + The Second Level
@@ -153,7 +163,8 @@
 
 -   순서 있는 목록은 글머리에 숫자를 사용한다.
 
-`예시 5`
+`목록 예시 5`
+
 ```
 1. Bird
 2. McHale
@@ -168,7 +179,8 @@
 
 -   글머리에 어떠한 순서로 숫자를 입력하더라도 첫 줄을 기준으로 내림차순으로 나타난다.
 
-`예시 6`
+`목록 예시 6`
+
 ```
 1. Bird
 1. McHale
@@ -179,7 +191,8 @@
 1. McHale
 1. Parish
 
-`예시 7`
+`목록 예시 7`
+
 ```
 3. Bird
 1. McHale
@@ -194,9 +207,10 @@
 
 ## 2.4. 코드 블록(Code Blocks)
 
-- 최소 4개의 공백 또는 1개의 탭으로 들여쓰기를 하면 코드 블록이 생성된다. 코드 블록은 들여쓰기되지 않은 줄에 도달할 때까지 계속된다.
+-   최소 4개의 공백 또는 1개의 탭으로 들여쓰기를 하면 코드 블록이 생성된다. 코드 블록은 들여쓰기되지 않은 줄에 도달할 때까지 계속된다.
 
-`예시 1`
+`코드 블록 예시 1`
+
 ```
 This is a normal paragraph:
 
@@ -211,9 +225,10 @@ This is a normal paragraph:
 
 end code block.
 
-- 개행하며 한 줄 씩 띄어쓰지 않으면 코드 블록이 제대로 되지 않는다.
+-   개행하며 한 줄 씩 띄어쓰지 않으면 코드 블록이 제대로 되지 않는다.
 
-`예시 2`
+`코드 블록 예시 2`
+
 ```
 This is a normal paragraph:
     This is a code block.
@@ -221,12 +236,13 @@ end code block.
 ```
 
 This is a normal paragraph:
-    This is a code block.
+This is a code block.
 end code block.
 
-- 코드 블록 앞뒤에 삼중 백틱 `` ``` ``을 배치하여 코드 블럭을 생성할 수 있다.
+-   코드 블록 앞뒤에 삼중 백틱 ` ``` `을 배치하여 코드 블럭을 생성할 수 있다.
 
-`예시 3`
+`코드 블록 예시 3`
+
 ````
 ```
 function test() {
@@ -234,15 +250,17 @@ function test() {
 }
 ```
 ````
+
 ```
 function test() {
   console.log("notice the blank line before this function?");
 }
 ```
 
-- 코드 블록에 3중 백틱을 표시하려면 4중 백틱 안에 넣는다.
+-   코드 블록에 3중 백틱을 표시하려면 4중 백틱 안에 넣는다.
 
-`예시 4`
+`코드 블록 예시 4`
+
 `````
 ````
 ```
@@ -257,9 +275,10 @@ Look! You can see my backticks.
 ```
 ````
 
-- GitHub에서는 선택적 언어 식별자를 추가하여 구문을 강조하도록 설정할 수 있다.
+-   GitHub에서는 선택적 언어 식별자를 추가하여 구문을 강조하도록 설정할 수 있다.
 
-`예시 5`
+`코드 블록 예시 5`
+
 ````
 ```ruby
 require 'redcarpet'
@@ -273,3 +292,70 @@ require 'redcarpet'
 markdown = Redcarpet.new("Hello World!")
 puts markdown.to_html
 ```
+
+## 2.5. 수평선(Horizontal Rules)
+
+-   3개 이상의 붙임표(hyphen)`-`, 별표(asterisk)`*`, 밑줄(underscore)`_`을 사용하면 수평선을 만들 수 있다. 각 기호 사이에 띄어쓰기를 해도 수평선이 생성된다.
+
+`수평선 예시`
+
+```
+* * *
+
+***
+
+*****
+
+- - -
+
+---------------------------------------
+
+___
+```
+
+* * *
+
+***
+
+*****
+
+- - -
+
+---------------------------------------
+
+___
+
+## 2.6. 강제개행(Line Breaks)
+
+-   마크다운 앱에서 줄 끝에 2개 이상의 띄어쓰기(space)를 하고 개행(return)하면 강제개행 할 수 있다. 
+
+`강제개행 예시 1`
+```
+First line with two spaces after.  
+And the next line.
+```
+
+First line with two spaces after.  
+And the next line.
+
+-   HTML을 지원하는 마크다운 앱에서는 `<br>`태그를 이용하여 강제개행 할 수 있다.
+
+`강제개행 예시 2`
+```
+First line with the HTML tag after.<br>
+And the next line.
+```
+
+First line with the HTML tag after.<br>
+And the next line.
+
+-   모든 마크다운 앱에서 지원하지는 않지만 줄 끝에 하나의 백슬래시(backslash)`\`를 입력하고 개행하면 강제개행 할 수 있다.
+
+`강제개행 예시 3`
+```
+First line with a backslash after.\
+And the next line.
+```
+
+First line with a backslash after.\
+And the next line.
