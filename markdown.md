@@ -293,6 +293,8 @@ markdown = Redcarpet.new("Hello World!")
 puts markdown.to_html
 ```
 
+<br />
+
 ## 2.5. 수평선(Horizontal Rules)
 
 -   3개 이상의 붙임표(hyphen)`-`, 별표(asterisk)`*`, 밑줄(underscore)`_`을 사용하면 수평선을 만들 수 있다. 각 기호 사이에 띄어쓰기를 해도 수평선이 생성된다.
@@ -324,6 +326,8 @@ ___
 ---------------------------------------
 
 ___
+
+<br />
 
 ## 2.6. 강제개행(Line Breaks)
 
@@ -359,3 +363,7 @@ And the next line.
 
 First line with a backslash after.\
 And the next line.
+
+<br />
+
+## 2.7. 링크(Links)
